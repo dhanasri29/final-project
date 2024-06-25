@@ -1,0 +1,163 @@
+/* styles.css */
+/* CreateResume.css */
+
+.create-resume-container {
+  display: flex;
+  flex-direction: column;
+  background-color: snow;
+  font-family: "sriracha";
+}
+.flex-container {
+  display: flex;
+  
+}
+.element1{
+  width: 180mm;/* A4 width */
+  height: 297mm; /* A4 height */
+   /* Fixed height */
+  
+  padding: 10px;
+ 
+} 
+.element1 h3,.element2  .LPh3,.element2  .LPP{
+  font-weight:bold;
+  text-align: center;
+}
+.element2{
+  width: 210mm; /* A4 width */
+  height: 297mm; /* A4 height */ /* Fixed height */
+  
+  padding: 10px;
+  
+}
+
+.welcome{
+  padding-top: 10px;
+  text-align: center;
+}
+.welcome h1{
+  color: #020202;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.welcome p{
+  background-color: #020202;
+  color:snow;
+  display: inline-block;
+ 
+}.welcome .para{
+  width: 70%;
+  text-align: center;
+  padding-left: 30%;
+ 
+  
+} 
+ button{
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #2272FF;
+  background-color: #020202;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+  width: fit-content;
+  height: fit-content;
+
+}
+ 
+ button:hover{
+  background: #2272FF;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: snow;
+    box-shadow: 0 0 5px #2272FF,
+                0 0 25px #2272FF,
+                0 0 50px #2272FF,
+                0 0 100px #2272FF;
+}
+button span {
+  position: absolute;
+  display: block;
+}
+ button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #2272FF);
+  animation: btn-anim1 1s linear infinite;
+}
+  
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.see button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent,#2272FF);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+ button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #2272FF);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+ button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent,#2272FF);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}

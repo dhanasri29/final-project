@@ -1,0 +1,111 @@
+/* template1..css */
+.template1 {
+  font-family: 'Verdana', sans-serif;
+  display: flex;
+  background-color: snow;
+  width: 210mm; /* A4 width */
+  height: 297mm; /* A4 height */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftColumn {
+  width: 40%;
+  background-color: black;
+  padding: 20px;
+  box-sizing: border-box;
+  border-right: 2px solid snow;
+  height: 297mm;
+  
+}
+
+.rightColumn {
+  width: 60%;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 297mm;
+}
+
+.profile h3 {
+  font-size: 2em;
+  color: black;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgb(0, 0, 0);
+  
+}
+
+.contact,
+.education,
+.experience,
+.projects {
+  margin-bottom: 20px;
+}
+
+.leftColumn h3 {
+  font-size: 1.2em;
+  color: snow;
+  margin-bottom: 10px;
+  border-bottom: 1px solid snow;
+  padding-bottom: 5px;
+}
+
+.leftColumn p {
+  font-size: 0.9em;
+  color: snow;
+  line-height: 1.6em;
+}
+
+.rightColumn p {
+  font-size: 0.9em;
+  color: #333;
+  line-height: 1.6em;
+}
+
+.rightColumn h3 {
+  font-size: 1.4em;
+  color: black;
+  margin-bottom: 10px;
+  border-bottom: 5px solid black;
+  padding-bottom: 5px;
+}
+
+.experience ul,
+.education ul,
+.achievements ul {
+  list-style-type:disc;
+  padding-left: 20px;
+  color: black;
+}
+
+.experience ul li,
+.education ul li,
+.achievements ul li {
+  margin-bottom: 10px;
+  color: black;
+}
+.skills ul,
+.projects ul {
+  list-style-type:disc;
+  padding-left: 20px;
+  color: snow;
+}
+.skills ul li,
+.projects ul li{
+  margin-bottom: 10px;
+  color: snow;
+}
+.summary {
+  margin-bottom: 20px;
+}

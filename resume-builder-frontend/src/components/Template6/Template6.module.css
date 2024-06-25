@@ -1,0 +1,65 @@
+.template6 {
+    font-family: 'Georgia', serif;
+    width: 210mm; /* A4 width */
+    height: 297mm; /* A4 height */
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 20px;
+    
+  }
+  
+  .header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+    
+  }
+  .header h1{
+    text-transform: uppercase;
+  }
+  
+  .columns {
+    display: flex;
+    margin-top: 20px;
+    
+  }
+  
+  .leftColumn {
+    width: 35%;
+    padding-right: 20px;
+    border-right: 1px solid #ccc;
+    background-color: rgb(195, 4, 100);
+    color: antiquewhite;
+    
+  }
+  
+  .rightColumn {
+    width: 65%;
+    padding-left: 20px;
+   
+  }
+  
+  h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .contact, .skills, .experience, .education {
+    margin-bottom: 20px;
+  }
+  

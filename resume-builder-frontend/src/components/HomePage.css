@@ -1,0 +1,441 @@
+
+body {
+    margin:0;
+    padding:0;
+    
+    background: linear-gradient(snow,snow);
+    
+   font-family: "Sriracha";
+    
+  }
+  
+  .section2 h1{
+    
+    font-family: "Sriracha";
+    padding-left: 40%;
+    padding-right: 35%;
+    
+   
+    color: #020202;
+    
+    font-weight: bold;
+   
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Sriracha";
+  }
+  
+  
+     .login-box {
+      font-family: "Sriracha";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background:#020202;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    }
+  
+  .login-box h2 {
+    font-family: "Sriracha";
+    margin: 0 0 30px;
+    padding: 0;
+    color: whitesmoke;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    font-family: "Sriracha";
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color:whitesmoke;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid whitesmoke;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box labelfor {
+    font-family: "Sriracha";
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: whitesmoke;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ labelfor,
+  .login-box .user-box input:valid ~ labelfor {
+    font-family: "Sriracha";
+    top: -20px;
+    left: 0;
+    color: #2272FF;
+    font-size: 12px;
+  }
+  .login-box p{
+    font-family: "Sriracha";
+    color: whitesmoke;
+  }
+  .login-box form a {
+    font-family: "Sriracha";
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #2272FF;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+  .login-box a:hover {
+    font-family: "Sriracha";
+    background: #2272FF;
+    color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #2272FF,
+                0 0 25px #2272FF,
+                0 0 50px #2272FF,
+                0 0 100px #2272FF;
+  }
+  
+  .login-box a span {
+    font-family: "Sriracha";
+    position: absolute;
+    display: block;
+  }
+  
+  .login-box a span:nth-child(1) {
+    font-family: "Sriracha";
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2272FF);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(2) {
+    font-family: "Sriracha";
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent,#2272FF);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(3) {
+    font-family: "Sriracha";
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2272FF);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(4) {
+    font-family: "Sriracha";
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent,#2272FF);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+    
+  }
+  
+  nav{
+    background:#020202 ;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+    color: snow;
+    --color1:#2272FF;
+    --color2: #2272FF;
+    --color3: #2272FF;
+    --color4: #2272FF;
+    --interval: 1s;
+    display: inline-block;
+    text-shadow: 
+      0 0 10px var(--color1),
+      0 0 20px var(--color2),
+      0 0 40px var(--color3),
+      0 0 80px var(--color4);
+    will-change: filter, color;
+    filter: saturate(60%);
+    animation: flicker steps(100) var(--interval) 1s infinite;
+    font-family: Sriracha;
+    font-size: 40px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    font-family: "Sriracha";
+      
+      
+    
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+    font-family: "Sriracha";
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    font-family: "Sriracha";
+  }
+  nav ul li a{
+    color: snow;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: "Sriracha";
+
+  }
+  a.active,a:hover{
+    background: #2272FF;
+    transition: .5s;
+    font-family: "Sriracha";
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: snow;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    font-family: "Sriracha";
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+      font-family: "Sriracha";
+    }
+    nav ul li a{
+      font-size: 16px;
+      font-family: "Sriracha";
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: snow;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      font-family: "Sriracha";
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+      font-family: "Sriracha";
+    }
+    nav ul li a{
+      font-size: 20px;
+      font-family: "Sriracha";
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+      font-family: "Sriracha";
+    }
+    #check:checked ~ ul{
+      left: 0;
+      font-family: "Sriracha";
+    }
+  }
+  section{
+    font-family: "Sriracha";
+    background-size: cover;
+    height: calc(100vh - 80px);
+    width: auto;
+  }
+  @keyframes flicker {
+    50% { color:snow;
+      filter: saturate(200%) hue-rotate(20deg);}
+     
+  }
+  @keyframes flicker2{
+    50% { color: #000000;
+      filter: saturate(200%) hue-rotate(20deg);}
+     
+  }
+  .about-us{
+    
+    color: #020202;
+    border-radius: 10px;
+    height:fit-content;
+    text-align:center;
+  }
+  .section3 h1{
+    
+    padding-left: 42%;
+    padding-right: 35%;
+    color: #020202;
+    
+   
+    font-weight: bold;
+  }
+  .section4 h1{
+    padding-left: 40%;
+    padding-right: 35%;
+    color: #020202;
+    
+    font-weight: bold;
+  }
+ 
+.container-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #020202;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+.container-form h6 {
+    
+    color: snow;
+}
+
+.container-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-form labelfor{
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.container-form input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #373434;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.container-form textarea {
+    resize: vertical;
+}
+
+.footer-box p{
+  text-align: center;
+}
+.contact-us{
+  padding-left: 40%;
+  padding-right: 40%;
+}
+
+.app-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+}
+
+.feature-card {
+  background: linear-gradient( #020202, #020202);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px #363737;
+  padding: 20px;
+  margin: 30px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 250px;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px #2272FF, 0 0px 10px #2272FF;
+}
+
+.feature-card h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+  color:snow;
+}
+
+.feature-card p {
+  margin: 0;
+  font-size: 1rem;
+  color:snow;
+}

@@ -1,0 +1,80 @@
+
+.resume-form{
+    width: 100%; /* A4 width */
+    height: 297mm;
+    /* A4 height */
+    font-family: "Sriracha";
+   
+}
+:root {
+   
+    --clr-white: snow;
+    --clr-bright: #EFF2F9;
+    --clr-dark: #020202;
+    --clr-black:#020202;
+    --clr-grey: #656e83;
+    --clr-blue:#2272FF;
+    
+    --transition: all 300ms ease-in-out;
+}
+
+
+
+
+
+.cv-form-row-title {
+    background-color: var(--clr-dark);
+    padding: 0.8rem 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.cv-form-row-title h3 {
+    color: var(--clr-blue);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1.7rem;
+}
+
+.cv-form-blk {
+    margin: 3rem 0;
+}
+
+.cv-form-row {
+    padding: 3rem 2rem 0 2rem;
+    border: 1px solid rgba(110, 109, 109, 0.08);
+    margin-bottom: 1rem;
+    position: relative;
+    background-color: #020202;
+}
+
+.form-label {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--clr-blue);
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
+.dashboard-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem; /* Adjust as needed for spacing between columns */
+    padding: 3rem;
+}
+
+.column {
+    flex: 1;
+    min-width: 0; /* Allow content to overflow if necessary */
+}
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+}
